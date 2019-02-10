@@ -21,10 +21,10 @@ function deleteItem(e){
   
   function getTotalPrice() {
   
-    var itemPrice = document.querySelectorAll('.item-price'),        
-        total = document.querySelector('.totalprice'),
-        itemQty = document.getElementsByClassName('qtyInput'),
-        itemTotal = document.querySelectorAll('.item-totalprice');
+    var itemPrice = document.querySelectorAll('.item-price')     
+    var total = document.querySelector('.totalprice')
+    var itemQty = document.getElementsByClassName('qtyInput')
+    var itemTotal = document.querySelectorAll('.item-totalprice');
     var sum = 0
     for(var i = 0; i < itemPrice.length; i++){
       itemTotal[i].innerHTML = itemPrice[i].innerHTML*itemQty[i].value.toFixed(2)
