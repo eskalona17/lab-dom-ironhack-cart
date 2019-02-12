@@ -35,6 +35,8 @@ function deleteItem(e){
 
 
   function createNewItem(){
+    var inputName = document.querySelector('.newitem-name');
+    var inputPrice = document.querySelector('.newitem-price');
     var newItem = document.createElement("div")
     newItem.className = "item-container"
     newItem.innerHTML = '<div><span class="item-name">' + inputName.value + '</span></div><div>$<span class="item-price">' + inputPrice.value + '</span></div><div><span class="item-amount">QTY</span><input type="text" class="qtyInput"></div><div>$<span class="item-totalprice">0</span></div><div><button class=" btn btn-delete item-delete new-delBtn">Delete</button></div>'
